@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.data.hostedpayments.android_hosted_plugin-release-34:/layout-sw600dp-v13/mtrl_layout_snackbar.xml",
+        "source": "com.data.hostedpayments.android_hosted_plugin-material-1.12.0-20:/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "com.data.hostedpayments.android_hosted_plugin-release-34:/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "com.data.hostedpayments.android_hosted_plugin-material-1.12.0-20:/layout-sw600dp-v13/design_layout_snackbar.xml"
+    }
+]

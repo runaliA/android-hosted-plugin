@@ -1,0 +1,86 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:2:1-37:12
+	package
+		INJECTED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:4:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:6:22-73
+queries
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:7:5-21:15
+intent#action:name:android.intent.action.VIEW+data:scheme:upi
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:8:9-11:18
+action#android.intent.action.VIEW
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:9:13-65
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:9:21-62
+data
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:10:13-42
+	android:host
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:14:40-58
+	android:scheme
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:10:19-39
+intent#action:name:android.intent.action.VIEW+data:host:pay+data:scheme:upi
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:12:9-15:18
+package#com.google.android.apps.nbu.paisa.user
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:16:9-74
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:16:18-71
+package#com.phonepe.app
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:17:9-51
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:17:18-48
+package#net.one97.paytm
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:18:9-51
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:18:18-48
+package#in.org.npci.upiapp
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:19:9-54
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:19:18-51
+package#com.dreamplug.androidapp
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:20:9-60
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:20:18-57
+application
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:22:5-35:19
+	android:networkSecurityConfig
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:22:18-78
+activity#com.data.hostedpayments.Activity.Checkout
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:24:13-46
+activity#com.data.hostedpayments.Activity.PaymentOptionsActivity
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:26:9-28:40
+	android:exported
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:27:13-60
+uses-library#org.apache.http.legacy
+ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:30:9-32:40
+	android:required
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml:31:13-50
+uses-sdk
+INJECTED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml
+INJECTED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\PG\android\SampleHostedApp\SampleHostedApp\android_hosted_plugin\src\main\AndroidManifest.xml

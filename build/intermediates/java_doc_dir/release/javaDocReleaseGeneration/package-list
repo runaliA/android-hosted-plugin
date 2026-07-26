@@ -1,0 +1,17 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.data.hostedpayments.model.Request/PaymentRequest.Builder///PointingToDeclaration/com/data/hostedpayments/model/Request/PaymentRequest.Builder.html
+$dokka.location:com.data.hostedpayments.model/SDKConfiguration.Builder///PointingToDeclaration/com/data/hostedpayments/model/SDKConfiguration.Builder.html
+com.data.hostedpayments
+com.data.hostedpayments.Activity
+com.data.hostedpayments.Adapter
+com.data.hostedpayments.Interface
+com.data.hostedpayments.Network
+com.data.hostedpayments.Theme
+com.data.hostedpayments.model
+com.data.hostedpayments.model.Request
+com.data.hostedpayments.model.Response
+com.data.hostedpayments.repository
+com.data.hostedpayments.utils
+com.data.hostedpayments.viewmodel
+

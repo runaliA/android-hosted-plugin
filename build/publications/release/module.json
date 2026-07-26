@@ -1,0 +1,193 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.runalia",
+    "module": "android-hosted-payments",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "android-hosted-payments-1.0.0.aar",
+          "url": "android-hosted-payments-1.0.0.aar",
+          "size": 192664,
+          "sha512": "58cd3f22816a35f836cb0b98c494961e1531c876dcf508378bf824599b3b6ba995c2ec5583c50e9d810cacd2936cba75391410026d7dbafdb800c0a084f68184",
+          "sha256": "c1ede8fd356932e5dbd53d80c003874c320e7db0c17872b100b87fd708807a49",
+          "sha1": "4fddba3ba4933b1cdf02247a11389d971de92572",
+          "md5": "8bd59d90064d0054ce637c113c188359"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity-ktx",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-livedata",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.constraintlayout",
+          "module": "constraintlayout",
+          "version": {
+            "requires": "2.2.1"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "logging-interceptor",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "retrofit",
+          "version": {
+            "requires": "2.9.0"
+          }
+        },
+        {
+          "group": "com.squareup.retrofit2",
+          "module": "converter-gson",
+          "version": {
+            "requires": "2.9.0"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.9"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "android-hosted-payments-1.0.0.aar",
+          "url": "android-hosted-payments-1.0.0.aar",
+          "size": 192664,
+          "sha512": "58cd3f22816a35f836cb0b98c494961e1531c876dcf508378bf824599b3b6ba995c2ec5583c50e9d810cacd2936cba75391410026d7dbafdb800c0a084f68184",
+          "sha256": "c1ede8fd356932e5dbd53d80c003874c320e7db0c17872b100b87fd708807a49",
+          "sha1": "4fddba3ba4933b1cdf02247a11389d971de92572",
+          "md5": "8bd59d90064d0054ce637c113c188359"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "android-hosted-payments-1.0.0-sources.jar",
+          "url": "android-hosted-payments-1.0.0-sources.jar",
+          "size": 54147,
+          "sha512": "ae9801537bf07b1f8b14737ef8ac32842d85226984e6c308f107c45b24839ba9c3acdf08d50956c8858109a21f47edb253e40c27556ea74e6ab560c66e9b605d",
+          "sha256": "b466e3f762b95bbfb7d4b7846be89cb2ae81f0d90999c7d4d8ce503d04340548",
+          "sha1": "061093bbe513987c808519345d38fcd690836dfd",
+          "md5": "173c3a615c4fbcdd70211ac52db775a9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "android-hosted-payments-1.0.0-javadoc.jar",
+          "url": "android-hosted-payments-1.0.0-javadoc.jar",
+          "size": 490926,
+          "sha512": "073247037615025ecc16a2cb203ebda4af01307f573d68eda5bb7483cbd07ad6e81901b64609db1ada31f951bb590fe6ba683442861af1ea2f12d847c66c1aca",
+          "sha256": "56f82228b21e04069e4ee18d6f514f28501012453322268bcf3464b89e9e0d51",
+          "sha1": "465189d40fcc22e0da4886de705d5e5a26e8ed16",
+          "md5": "874a2f924f5d88b3202112040b821430"
+        }
+      ]
+    }
+  ]
+}

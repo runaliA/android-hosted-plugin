@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.data.hostedpayments.android_hosted_plugin-release-34:/color-night-v8/material_timepicker_button_stroke.xml",
+        "source": "com.data.hostedpayments.android_hosted_plugin-material-1.12.0-20:/color-night-v8/material_timepicker_button_stroke.xml"
+    },
+    {
+        "merged": "com.data.hostedpayments.android_hosted_plugin-release-34:/color-night-v8/material_timepicker_modebutton_tint.xml",
+        "source": "com.data.hostedpayments.android_hosted_plugin-material-1.12.0-20:/color-night-v8/material_timepicker_modebutton_tint.xml"
+    },
+    {
+        "merged": "com.data.hostedpayments.android_hosted_plugin-release-34:/color-night-v8/material_timepicker_clockface.xml",
+        "source": "com.data.hostedpayments.android_hosted_plugin-material-1.12.0-20:/color-night-v8/material_timepicker_clockface.xml"
+    }
+]

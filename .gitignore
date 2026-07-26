@@ -1,1 +1,63 @@
-/build
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing / Keys
+*.jks
+*.keystore
+*.p12
+*.asc
+private.asc
+
+# Maven Central credentials (if stored as files)
+credentials.properties
+
+# Environment files
+.env
+.env.*
+
+# Kotlin
+.kotlin/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Android Studio navigation
+.navigation/
+
+# IntelliJ caches
+out/
+
+# Generated documentation
+dokka/
+
+# Maven local repository (if accidentally created)
+.m2/

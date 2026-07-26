@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.data.hostedpayments.android_hosted_plugin-release-34:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\runali.ambavkar\\.gradle\\caches\\9.6.1\\transforms\\8f4fb351bea7ae7c3679732e5beb11f0\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.data.hostedpayments.android_hosted_plugin-mergeReleaseResources-32:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\runali.ambavkar\\.gradle\\caches\\9.6.1\\transforms\\8f4fb351bea7ae7c3679732e5beb11f0\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

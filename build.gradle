@@ -1,7 +1,7 @@
 plugins {
-    id 'com.android.library'
-    id 'maven-publish'
-    id 'signing'
+    id 'com.android.library' version '8.11.0'
+    id 'com.vanniktech.maven.publish' version '0.34.0'
+//    id 'signing'
 }
 
 group = "io.github.runalia"
@@ -40,12 +40,12 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
+//    publishing {
+//        singleVariant("release") {
+//            withSourcesJar()
+//            withJavadocJar()
+//        }
+//    }
 }
 
 dependencies {
@@ -71,82 +71,127 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }
+mavenPublishing {
 
-afterEvaluate {
+    publishToMavenCentral()
 
-    publishing {
+    signAllPublications()
 
-        publications {
+    coordinates(
+            "io.github.runalia",
+            "android-hosted-payments",
+            "1.0.0"
+    )
 
-            release(MavenPublication) {
+    pom {
 
-                from components.release
+        name.set("Android Hosted Payments SDK")
+        description.set("Android Hosted Payment SDK")
+        url.set("https://github.com/runaliA/android-hosted-plugin")
 
-                groupId = "io.github.runalia"
-
-                artifactId = "android-hosted-payments"
-
-                version = "1.0.0"
-
-                pom {
-
-                    name = "Android Hosted Payments SDK"
-
-                    description = "Android Hosted Payment SDK"
-
-                    url = "https://github.com/runaliA/android-hosted-plugin"
-
-                    licenses {
-
-                        license {
-
-                            name = "Apache License 2.0"
-
-                            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
-
-                        }
-
-                    }
-
-                    developers {
-
-                        developer {
-
-                            id = "runaliA"
-
-                            name = "Runali Ambavkar"
-
-                            email = "user.mac@concertosoft.com"
-
-                        }
-
-                    }
-
-                    scm {
-
-                        connection = "scm:git:git://github.com/runaliA/android-hosted-plugin.git"
-
-                        developerConnection = "scm:git:ssh://github.com/runaliA/android-hosted-plugin.git"
-
-                        url = "https://github.com/runaliA/android-hosted-plugin"
-
-                    }
-
-                }
-
+        licenses {
+            license {
+                name.set("Apache License 2.0")
+                url.set("https://www.apache.org/licenses/LICENSE-2.0.txt")
             }
-
         }
 
-    }
-    signing {
-        useGpgCmd()
-        sign publishing.publications["release"]
-    }
+        developers {
+            developer {
+                id.set("runaliA")
+                name.set("Runali Ambavkar")
+                email.set("user.mac@concertosoft.com")
+            }
+        }
 
+        scm {
+            connection.set("scm:git:git://github.com/runaliA/android-hosted-plugin.git")
+            developerConnection.set("scm:git:ssh://github.com/runaliA/android-hosted-plugin.git")
+            url.set("https://github.com/runaliA/android-hosted-plugin")
+        }
+    }
 }
-
-
+//--------------------------
+//afterEvaluate {
+//
+//    publishing {
+//
+//        publications {
+//
+//            release(MavenPublication) {
+//
+//                from components.release
+//
+//                groupId = "io.github.runalia"
+//
+//                artifactId = "android-hosted-payments"
+//
+//                version = "1.0.0"
+//
+//                pom {
+//
+//                    name = "Android Hosted Payments SDK"
+//
+//                    description = "Android Hosted Payment SDK"
+//
+//                    url = "https://github.com/runaliA/android-hosted-plugin"
+//
+//                    licenses {
+//
+//                        license {
+//
+//                            name = "Apache License 2.0"
+//
+//                            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+//
+//                        }
+//
+//                    }
+//
+//                    developers {
+//
+//                        developer {
+//
+//                            id = "runaliA"
+//
+//                            name = "Runali Ambavkar"
+//
+//                            email = "user.mac@concertosoft.com"
+//
+//                        }
+//
+//                    }
+//
+//                    scm {
+//
+//                        connection = "scm:git:git://github.com/runaliA/android-hosted-plugin.git"
+//
+//                        developerConnection = "scm:git:ssh://github.com/runaliA/android-hosted-plugin.git"
+//
+//                        url = "https://github.com/runaliA/android-hosted-plugin"
+//
+//                    }
+//
+//                }
+//
+//            }
+//
+//        }
+//
+//    }
+//    signing {
+//        useGpgCmd()
+//        sign publishing.publications["release"]
+//    }
+//
+//}
+//
+//mavenPublishing {
+//    publishToMavenCentral()
+//
+//    signAllPublications()
+//}
+//-------------
 //publishing {
 //    repositories {
 //        maven {

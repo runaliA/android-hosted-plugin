@@ -1,1 +1,1 @@
-var moduleSearchIndex = [{"l":":android_hosted_plugin","url":"index.html"}]
+var moduleSearchIndex = [{"l":":","url":"index.html"}]

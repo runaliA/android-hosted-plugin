@@ -1,14 +1,15 @@
 plugins {
     id 'com.android.library'
     id 'maven-publish'
+    id 'signing'
 }
 
-group = "com.concerto"
-version = "1.0.2"
+group = "io.github.runalia"
+version = "1.0.0"
 
 android {
     namespace 'com.data.hostedpayments'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         minSdk 23
@@ -71,6 +72,81 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }
 
+afterEvaluate {
+
+    publishing {
+
+        publications {
+
+            release(MavenPublication) {
+
+                from components.release
+
+                groupId = "io.github.runalia"
+
+                artifactId = "android-hosted-payments"
+
+                version = "1.0.0"
+
+                pom {
+
+                    name = "Android Hosted Payments SDK"
+
+                    description = "Android Hosted Payment SDK"
+
+                    url = "https://github.com/runaliA/android-hosted-plugin"
+
+                    licenses {
+
+                        license {
+
+                            name = "Apache License 2.0"
+
+                            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+
+                        }
+
+                    }
+
+                    developers {
+
+                        developer {
+
+                            id = "runaliA"
+
+                            name = "Runali Ambavkar"
+
+                            email = "user.mac@concertosoft.com"
+
+                        }
+
+                    }
+
+                    scm {
+
+                        connection = "scm:git:git://github.com/runaliA/android-hosted-plugin.git"
+
+                        developerConnection = "scm:git:ssh://github.com/runaliA/android-hosted-plugin.git"
+
+                        url = "https://github.com/runaliA/android-hosted-plugin"
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+    signing {
+        useGpgCmd()
+        sign publishing.publications["release"]
+    }
+
+}
+
+
 //publishing {
 //    repositories {
 //        maven {
@@ -85,30 +161,30 @@ dependencies {
 //    }
 //}
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-
-                from components.release
-
-                groupId = "com.concerto"
-                artifactId = "payment-sdk"
-                version = "1.0.2"
-            }
-        }
-
-        repositories {
-            maven {
-                name = "GitHubPackages"
-
-                url = uri("https://maven.pkg.github.com/thoratpooja042023-sudo/inapp-android")
-
-                credentials {
-                    username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
-                    password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
-                }
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//
+//                from components.release
+//
+//                groupId = "com.concerto"
+//                artifactId = "payment-sdk"
+//                version = "1.0.2"
+//            }
+//        }
+//
+//        repositories {
+//            maven {
+//                name = "GitHubPackages"
+//
+//                url = uri("https://maven.pkg.github.com/thoratpooja042023-sudo/inapp-android")
+//
+//                credentials {
+//                    username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
+//                    password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+//                }
+//            }
+//        }
+//    }
+//}

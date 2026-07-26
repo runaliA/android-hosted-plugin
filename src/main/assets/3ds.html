@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3DS Challenge Redirect</title>
+</head>
+<body onload="document.getElementById('CReqForm').submit();">
+
+<div id="threedsChallengeRedirect" style="height:100vh">
+    <form id="CReqForm"
+          method="POST"
+          action="https://mtf.gateway.mastercard.com/acs/visa/v2/prompt">
+
+        <input type="hidden"
+               name="creq"
+               value="eyJ0aHJlZURTU2VydmVyVHJhbnNJRCI6ImFkNjQwNzVhLTNkMmUtNGQ2MC1hZDI1LTc0MjFlMTUyNWYwZiJ9"/>
+
+    </form>
+</div>
+
+<script>
+    document.getElementById("CReqForm").submit();
+</script>
+
+</body>
+</html>
+
